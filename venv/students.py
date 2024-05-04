@@ -15,7 +15,7 @@ class DistanceCalculator(QWidget):
         self.distance_line_edit = QLineEdit()
 
         #create widgets
-        time_label = QLabel("Time (hours")
+        time_label = QLabel("Time (hours)")
         self.time_line_edit = QLineEdit()
 
         self.combo = QComboBox()
@@ -31,6 +31,7 @@ class DistanceCalculator(QWidget):
         grid.addWidget(self.distance_line_edit, 0, 1)
         grid.addWidget(self.distance_line_edit, 0, 1)
         grid.addWidget(self.combo, 0, 2)
+        grid.addWidget(time_label, 1, 0)
         grid.addWidget(self.time_line_edit, 1, 1)
         grid.addWidget(calculate_button, 2, 1, 1, 1)
         grid.addWidget(self.output_label, 3, 0, 2, 2)
